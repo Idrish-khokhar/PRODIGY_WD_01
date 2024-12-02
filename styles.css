@@ -1,0 +1,61 @@
+body {
+    margin:auto;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  /* Navbar Styling */
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #020;
+    color: white;
+    padding: 10px 20px;
+    transition: 0.3s;
+  }
+  
+  .nav-links {
+    list-style-type:none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    margin: 0 15px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: red;
+    font-size: 18px;
+    transition: color 0.3s, font-weight 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: black;
+    font-weight: bold;
+  }
+  
+  /* Dynamic Styles on Scroll */
+  .navbar.scrolled {
+    background-color:skyblue;
+  }
+  
+  /* Section Styling */
+  .section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+  }
+  .section:hover {
+    color: red;
+    background-color: lightblue;
+  }
+  
+  
