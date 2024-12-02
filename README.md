@@ -1,1 +1,1 @@
-# PRODIGY_WD_01
+This is the first project about landing page of a website.
