@@ -1,11 +1,11 @@
-// Select the navbar
-const navbar = document.querySelector('.navbar');
+        // Add a scroll event listener to change the background color when scrolled
+        window.addEventListener('scroll', function () {
+          var header = document.querySelector('header');
+          var scrollPosition = window.scrollY;
 
-// Add a scroll event listener
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 50) {
-    navbar.classList.add('scrolled');
-  } else {
-    navbar.classList.remove('scrolled');
-  }
-});
+          if (scrollPosition > 50) {
+              header.style.backgroundColor = '#555';
+          } else {
+              header.style.backgroundColor = '#333';
+          }
+      });

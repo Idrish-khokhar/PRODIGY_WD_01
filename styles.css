@@ -1,56 +1,70 @@
 body {
-    font-family: Arial, sans-serif;
-    scroll-behavior: smooth;
-  }
-  
-  /* Navbar Styling */
-  .navbar {
-    position: fixed;
-    width: 100%;
-    background-color: #020;
-    color: white;
-    padding: 10px 20px;
-    transition: 0.3s;
-  }
-  
-  .nav-links {
-    list-style-type:none;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .nav-links li {
-    margin: 0 15px;
-  }
-  
-  .nav-links a {
-    text-decoration: none;
-    color: red;
-    font-size: 18px;
-    transition: color 0.3s, font-weight 0.3s;
-  }
-  
-  .nav-links a:hover {
-    color: black;
-    font-weight: bold;
-  }
-  
-  /* Dynamic Styles on Scroll */
-  .navbar.scrolled {
-    background-color:skyblue;
-  }
-  
-  /* Section Styling */
-  .section {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
-  }
-  .section:hover {
-    color: red;
-    background-color: lightblue;
-  }
-  
-  
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f2f2f2; /* Added background color to the body */
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #fff;
+  color: #f20808;
+}
+
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.image-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.image {
+  margin:5px;
+  width: 45%; /* Adjust the width as needed */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.image:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
