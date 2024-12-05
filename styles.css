@@ -42,17 +42,21 @@ section {
 }
 
 .image-container {
-  display: flex;
-  justify-content: space-around;
+  display: block;
+  justify-content: space-between;
   align-items: center;
 }
 
-.image {
+.image{
   margin:5px;
   width: 45%; /* Adjust the width as needed */
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
+}
+.image1{
+  width: 70%;
+  border-radius:8px ;
 }
 
 .image:hover {
